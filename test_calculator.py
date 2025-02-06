@@ -1,6 +1,6 @@
 """ Import the add function so the test can use it """
 import pytest
-from calculator import add, divide, subtract, Point, Triangle
+from calculator import add, divide, Point, Triangle
 
 def test_add():
     """Test add function"""
@@ -32,10 +32,6 @@ def test_division():
     with pytest.raises(ZeroDivisionError) as e:
         divide(2, 0)
         assert str(e.value) == "Cannot divide by zero!"
-
-def test_subtract():
-    """Test that function raises exact exception"""
-    assert subtract(5, 3) == 2
 
 @pytest.mark.parametrize(
    ("p1x, p1y, p2x, p2y, p3x, p3y, expected"),

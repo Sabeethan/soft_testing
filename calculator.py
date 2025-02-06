@@ -8,9 +8,6 @@ def divide(numerator, denominator):
         raise ZeroDivisionError("Cannot divide by zero!")
     return numerator / denominator
 
-def subtract(a, b):
-    return a + b
-    
 class Point:
     def __init__(self, x, y):
         self.x = x

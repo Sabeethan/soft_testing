@@ -1,0 +1,6 @@
+pytest
+numpy
+pandas
+pytest-mpl
+pytest-regtest
+matplotlib

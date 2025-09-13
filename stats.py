@@ -38,14 +38,14 @@ def randomly_sample_and_filter_participants(
                       {age: 25, height: 180}, 
                       {age: 30, height: 170}, 
                       {age: 35, height: 160}, 
-    ]
-    """    
+    ]"""
+
     # Get the sampled participants
     sampled_participants = sample_participants(participants, sample_size)
-    
+
     # Remove participants that are outside the age range
     sampled_participants_age_filtered = filter_participants_by_age(sampled_participants, min_age, max_age)
-    
+
     # Remove participants that are outside the height range
     sampled_participants_height_filtered = filter_participants_by_height(sampled_participants_age_filtered, min_height, max_height)
 

@@ -6,7 +6,7 @@ def power(value, exponent):
     return result
 
 def square_root(x):
-   """Raise Value Error"""
-   if x < 0:
-      raise ValueError("Cannot compute square root of negative number yet!")
-   return x ** 0.5
+    """Raise Value Error"""
+    if x < 0:
+        raise ValueError("Cannot compute square root of negative number yet!")
+    return x ** 0.5
